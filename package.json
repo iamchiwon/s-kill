@@ -1,0 +1,47 @@
+{
+  "name": "s-kill",
+  "version": "0.1.0",
+  "description": "Terminal UI to browse, inspect, trash and restore AI agent skills (Claude Code, Codex, Gemini, Antigravity, Cursor…) across global and project scopes",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamchiwon/s-kill.git"
+  },
+  "homepage": "https://github.com/iamchiwon/s-kill#readme",
+  "type": "module",
+  "bin": {
+    "s-kill": "dist/cli.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/cli.tsx",
+    "test": "node --import tsx --test test/*.test.ts",
+    "prepublishOnly": "npm run build && npm test"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "keywords": [
+    "skills",
+    "claude-code",
+    "codex",
+    "gemini",
+    "antigravity",
+    "agent",
+    "tui",
+    "ink"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "ink": "^8.0.0",
+    "react": "^19.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "@types/react": "^19.3.0",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
