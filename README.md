@@ -10,8 +10,8 @@ by 48 agents (Claude Code, Codex, Gemini CLI, Antigravity, Cursor, Copilot, Open
 Requires Node.js 22+. Works in any terminal on macOS, Linux and Windows.
 
 ```sh
-npm i -g s-kill     # then run `s-kill` anywhere
-npx s-kill          # run once without installing
+npm i -g @iamchiwon/s-kill  # then run `s-kill` anywhere
+npx @iamchiwon/s-kill       # run once without installing
 ```
 
 ## Layout
@@ -75,4 +75,4 @@ npm test
 npm run build   # dist/
 ```
 
-Release: `npm version patch && git push --follow-tags` → GitHub Actions tests on 3 OSes and publishes to npm (requires the `NPM_TOKEN` repo secret).
+Release: `npm version patch && git push --follow-tags` → GitHub Actions tests on 3 OSes and publishes to npm (requires Trusted Publishing configured for `@iamchiwon/s-kill`, using GitHub user `iamchiwon`, repository `s-kill`, and workflow `ci.yml`).

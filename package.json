@@ -1,5 +1,5 @@
 {
-  "name": "s-kill",
+  "name": "@iamchiwon/s-kill",
   "version": "0.1.0",
   "description": "Terminal UI to browse, inspect, trash and restore AI agent skills (Claude Code, Codex, Gemini, Antigravity, Cursor…) across global and project scopes",
   "repository": {
