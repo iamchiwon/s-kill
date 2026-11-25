@@ -65,14 +65,3 @@ Run `s-kill` in a project folder. It scans:
 - Multiple selections are processed together. Failures don't stop the rest and are listed afterwards. Items that can't return to their original location are skipped and the rest are restored.
 
 Agent paths follow the [`gh skill install`](https://cli.github.com/manual/gh_skill_install) registry, plus Codex's own `~/.codex/skills` (`CODEX_HOME`). `CLAUDE_CONFIG_DIR`, `PI_CODING_AGENT_DIR` and `CODEX_HOME` are honored. Dot folders such as `.system` hold agents' built-in skills and are not shown.
-
-## Development
-
-```sh
-npm i
-npm run dev     # run with tsx
-npm test
-npm run build   # dist/
-```
-
-Release: `npm version patch && git push --follow-tags` → GitHub Actions tests on 3 OSes and publishes to npm (requires Trusted Publishing configured for `@iamchiwon/s-kill`, using GitHub user `iamchiwon`, repository `s-kill`, and workflow `ci.yml`).
